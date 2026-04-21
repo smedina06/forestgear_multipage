@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,131 +12,161 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/gear.css">
     <link rel="shortcut icon" href="images/forest-icon-png-29.png" type="image/x-icon">
 
     <title>Forest Gear | FORESTGEAR</title>
 </head>
+
 <body>
-        <header>
-            <a href="index.html"><img class="logoimage" src="images/logo.png" alt="Return to Homepage" title="Return to Homepage"></a>
-            <h1 class="allcaps">Forest<wbr><span class="thin-text">Gear</span></h1>
-            
-            <!-- navbar -->
-            
-        </header>
-        <aside>
-            <form action="#" method="get">
-                <div class="form-element">
-                    <input type="text" name="search" id="search" placeholder="Search">
-                </div>
-                <h5>Gender</h5>
-                <div class="form-element">
-                    <input type="checkbox" name="gender-womens" id="gender-womens">
-                    <label for="gender-womens">Womens (7)</label>
-                </div>
-                <div class="form-element">
-                    <input type="checkbox" name="gender-mens" id="gender-mens">
-                    <label for="gender-mens">Mens (6)</label>
-                </div>
-                <div class="form-element">
-                    <input type="checkbox" name="gender-girls" id="gender-girls">
-                    <label for="gender-girls">Girls (3)</label>
-                </div>
-                <div class="form-element">
-                    <input type="checkbox" name="gender-boys" id="gender-boys">
-                    <label for="gender-boys">Boys (4)</label>
-                </div>
+    <header>
+        <a href="index.html"><img class="logoimage" src="images/logo.png" alt="Return to Homepage"
+                title="Return to Homepage"></a>
+        <h1 class="allcaps">Forest<wbr><span class="thin-text">Gear</span></h1>
 
-                <h5>Department</h5>
-                <div class="form-element">
-                    <input type="checkbox" name="clothing" id="clothing">
-                    <label for="clothing">Clothing</label>
-                </div>
-                <div class="form-element">
-                    <input type="checkbox" name="shoes" id="shoes">
-                    <label for="shoes">Shoes</label>
-                </div>
-                <div class="form-element">
-                    <input type="checkbox" name="bags" id="bags">
-                    <label for="bags">Bags &amp; Backpacks</label>
-                </div>
-                <div class="form-element">
-                    <input type="checkbox" name="accessories" id="accessories">
-                    <label for="accessories">Accessories</label>
-                </div>
-                <div class="form-buttons">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </div>
-            </form>
-        </aside>
+        <!-- navbar -->
+        <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+        <nav class="navmenu" id="navmenu" data-visible="false">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="gear.html">Gear</a></div>
+        <div><a href="testimonials.html">Testimonials</a></div>
+        <div><a href="about.html">About</a></div>
+        <div><a class="Login" href="login.html">Login</a></div>
+        </nav>
 
-        <div class="products">
-            <a href="#" class="product">
-                <img src="https://picsum.photos/150" alt="" class="thumbnail">
-                <h3 class="product-title">Lorem ipsum dolor sit amet</h3>
-                <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quia nulla dolor vero repellat, pariatur debitis tempora ex corrupti temporibus.</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a href="#" class="product">
-                <img src="https://picsum.photos/151" alt="" class="thumbnail">
-                <h3 class="product-title">Quod dicta deserunt expedita consequatur</h3>
-                <p class="product-description">Eius eum magni culpa officia molestiae quidem quo ducimus ipsum vero laudantium nostrum esse consectetur et possimus, porro sapiente error.</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a href="#" class="product">
-                <img src="https://picsum.photos/152" alt="" class="thumbnail">
-                <h3 class="product-title">Omnis ipsa labore adipisci minima</h3>
-                <p class="product-description">Facilis doloribus officia suscipit ipsum laborum, mollitia sed maiores quos illo aut praesentium ex amet officiis provident adipisci a molestiae.</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a href="#" class="product">
-                <img src="https://picsum.photos/153" alt="" class="thumbnail">
-                <h3 class="product-title">Deleniti ullam ea beatae vel</h3>
-                <p class="product-description">Cumque laudantium atque consequatur error assumenda quas sunt eius ipsam fugiat? Unde, fugit maxime optio sint necessitatibus quod quidem voluptatum.</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a href="#" class="product">
-                <img src="https://picsum.photos/154" alt="" class="thumbnail">
-                <h3 class="product-title">Necessitatibus quisquam nisi hic aspernatur</h3>
-                <p class="product-description">Eligendi perferendis, vel totam impedit ad quo delectus in quod, soluta labore consequuntur nostrum est, natus molestias harum quibusdam corporis.</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a href="#" class="product">
-                <img src="https://picsum.photos/155" alt="" class="thumbnail">
-                <h3 class="product-title">Rem ducimus non itaque nisi</h3>
-                <p class="product-description">Earum placeat reiciendis incidunt libero ab quibusdam ipsam vitae? Reiciendis enim debitis voluptas architecto ipsa earum nobis dolorum eos accusantium!</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a href="#" class="product">
-                <img src="https://picsum.photos/156" alt="" class="thumbnail">
-                <h3 class="product-title">Quae temporibus sit at voluptate</h3>
-                <p class="product-description">Incidunt in natus magnam, quod itaque repellat ipsam provident cupiditate eligendi nam iusto ex accusantium dolores soluta consectetur aut corrupti?</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a href="#" class="product">
-                <img src="https://picsum.photos/157" alt="" class="thumbnail">
-                <h3 class="product-title">Ipsum ipsam eius culpa consequuntur</h3>
-                <p class="product-description">Hic dolorem eveniet qui commodi, recusandae sapiente eos error blanditiis a illo fugiat consequuntur modi laboriosam enim et? Illum, excepturi.</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a href="#" class="product">
-                <img src="https://picsum.photos/158" alt="" class="thumbnail">
-                <h3 class="product-title">Sed ex porro quisquam aperiam</h3>
-                <p class="product-description">Excepturi facere repudiandae debitis tenetur reiciendis nulla sunt repellendus perspiciatis consequuntur totam quisquam laboriosam similique, accusantium odio! Maxime, nihil obcaecatiExcepturi facere repudiandae debitis tenetur reiciendis nulla sunt repellendus perspiciatis consequuntur totam quisquam laboriosam similique, accusantium odio! Maxime, nihil obcaecati.</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-            <a class="product" href="#">
-                <img src="https://picsum.photos/159" alt="" class="thumbnail">
-                <h3 class="product-title">Lorem ipsum dolor sit amet</h3>
-                <p class="product-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint hic corrupti tempora?</p>
-                <h2 class="product-price">&dollar;59.99</h2>
-            </a>
-        </div>
 
-        <footer>
-            <p>&copy; <span id="copyright"></span> Michael Roberts Productions</p>
-        </footer>
+    </header>
+    <aside>
+        <form action="#" method="get">
+            <div class="form-element">
+                <input type="text" name="search" id="search" placeholder="Search">
+            </div>
+            <h5>Gender</h5>
+            <div class="form-element">
+                <input type="checkbox" name="gender-womens" id="gender-womens">
+                <label for="gender-womens">Womens (7)</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="gender-mens" id="gender-mens">
+                <label for="gender-mens">Mens (6)</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="gender-girls" id="gender-girls">
+                <label for="gender-girls">Girls (3)</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="gender-boys" id="gender-boys">
+                <label for="gender-boys">Boys (4)</label>
+            </div>
+
+            <h5>Department</h5>
+            <div class="form-element">
+                <input type="checkbox" name="clothing" id="clothing">
+                <label for="clothing">Clothing</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="shoes" id="shoes">
+                <label for="shoes">Shoes</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="bags" id="bags">
+                <label for="bags">Bags &amp; Backpacks</label>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" name="accessories" id="accessories">
+                <label for="accessories">Accessories</label>
+            </div>
+            <div class="form-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </aside>
+
+    <div class="products">
+        <a href="#" class="product">
+            <img src="https://picsum.photos/150" alt="" class="thumbnail">
+            <h3 class="product-title">Lorem ipsum dolor sit amet</h3>
+            <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quia nulla
+                dolor vero repellat, pariatur debitis tempora ex corrupti temporibus.</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a href="#" class="product">
+            <img src="https://picsum.photos/151" alt="" class="thumbnail">
+            <h3 class="product-title">Quod dicta deserunt expedita consequatur</h3>
+            <p class="product-description">Eius eum magni culpa officia molestiae quidem quo ducimus ipsum vero
+                laudantium nostrum esse consectetur et possimus, porro sapiente error.</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a href="#" class="product">
+            <img src="https://picsum.photos/152" alt="" class="thumbnail">
+            <h3 class="product-title">Omnis ipsa labore adipisci minima</h3>
+            <p class="product-description">Facilis doloribus officia suscipit ipsum laborum, mollitia sed maiores quos
+                illo aut praesentium ex amet officiis provident adipisci a molestiae.</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a href="#" class="product">
+            <img src="https://picsum.photos/153" alt="" class="thumbnail">
+            <h3 class="product-title">Deleniti ullam ea beatae vel</h3>
+            <p class="product-description">Cumque laudantium atque consequatur error assumenda quas sunt eius ipsam
+                fugiat? Unde, fugit maxime optio sint necessitatibus quod quidem voluptatum.</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a href="#" class="product">
+            <img src="https://picsum.photos/154" alt="" class="thumbnail">
+            <h3 class="product-title">Necessitatibus quisquam nisi hic aspernatur</h3>
+            <p class="product-description">Eligendi perferendis, vel totam impedit ad quo delectus in quod, soluta
+                labore consequuntur nostrum est, natus molestias harum quibusdam corporis.</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a href="#" class="product">
+            <img src="https://picsum.photos/155" alt="" class="thumbnail">
+            <h3 class="product-title">Rem ducimus non itaque nisi</h3>
+            <p class="product-description">Earum placeat reiciendis incidunt libero ab quibusdam ipsam vitae? Reiciendis
+                enim debitis voluptas architecto ipsa earum nobis dolorum eos accusantium!</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a href="#" class="product">
+            <img src="https://picsum.photos/156" alt="" class="thumbnail">
+            <h3 class="product-title">Quae temporibus sit at voluptate</h3>
+            <p class="product-description">Incidunt in natus magnam, quod itaque repellat ipsam provident cupiditate
+                eligendi nam iusto ex accusantium dolores soluta consectetur aut corrupti?</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a href="#" class="product">
+            <img src="https://picsum.photos/157" alt="" class="thumbnail">
+            <h3 class="product-title">Ipsum ipsam eius culpa consequuntur</h3>
+            <p class="product-description">Hic dolorem eveniet qui commodi, recusandae sapiente eos error blanditiis a
+                illo fugiat consequuntur modi laboriosam enim et? Illum, excepturi.</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a href="#" class="product">
+            <img src="https://picsum.photos/158" alt="" class="thumbnail">
+            <h3 class="product-title">Sed ex porro quisquam aperiam</h3>
+            <p class="product-description">Excepturi facere repudiandae debitis tenetur reiciendis nulla sunt
+                repellendus perspiciatis consequuntur totam quisquam laboriosam similique, accusantium odio! Maxime,
+                nihil obcaecatiExcepturi facere repudiandae debitis tenetur reiciendis nulla sunt repellendus
+                perspiciatis consequuntur totam quisquam laboriosam similique, accusantium odio! Maxime, nihil
+                obcaecati.</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+        <a class="product" href="#">
+            <img src="https://picsum.photos/159" alt="" class="thumbnail">
+            <h3 class="product-title">Lorem ipsum dolor sit amet</h3>
+            <p class="product-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint hic corrupti
+                tempora?</p>
+            <h2 class="product-price">&dollar;59.99</h2>
+        </a>
+    </div>
+    <!-- Return to Top Button -->
+    <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img
+                src="images/back-to-top-icon-png-7.jpg" alt=""></button></div>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Michael Roberts Productions</p>
+    </footer>
 
 </body>
+
 </html>
+<script src="js/scripts.js"></script>

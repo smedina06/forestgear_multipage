@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <link rel="shortcut icon" href="images/forest-icon-png-29.png" type="image/x-icon">
     <title>FORESTGEAR</title>
 </head>
+
 <body>
     <main>
         <section class="hero">
@@ -21,76 +23,64 @@
                 <img class="logoimage" src="images/logo.png" alt="Homepage" title="Homepage">
 
                 <!-- navbar -->
-                   
+                <button class="toggle-menu" id="toggle-menu" data-visible="false"></button>
+                <nav class="navmenu" id="navmenu" data-visible="false">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="gear.html">Gear</a></div>
+                <div><a href="testimonials.html">Testimonials</a></div>
+                <div><a href="about.html">About</a></div>
+                <div><a class="Login" href="login.html">Login</a></div>
+                </nav>
+
             </header>
-            
+
             <div class="title-text">
-                <p>Get all the &nbsp;&nbsp; <span class="allcaps">Forest<span class="thin-text">Gear</span></span> you need here at</p>
+                <p>Get all the &nbsp;&nbsp; <span class="allcaps">Forest<span class="thin-text">Gear</span></span> you
+                    need here at</p>
                 <h1 class="allcaps">Forest<wbr><span class="thin-text">Gear</span></h1>
                 <p>You won't regret it</p>
             </div>
         </section>
 
-            <div class="sales-points">
-                <div class="sales-point">
-                    <h3>Reliability</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic facere ipsam repudiandae est voluptates magnam?</p>
-                </div>
-                <div class="sales-point">
-                    <h3>Durability</h3>
-                    <p>Iste aspernatur quod illum repellat quisquam, facere quia perspiciatis in ipsum nam ut? Vero, fugiat!</p>
-                </div>
-                <div class="sales-point">
-                    <h3>Unparalleled Customer Service</h3>
-                    <p>Praesentium voluptatibus ipsum pariatur ipsam aperiam explicabo repellat doloribus ducimus quo, distinctio ea voluptate placeat.</p>
-                </div>
-                <div class="sales-point">
-                    <h3>Unbeatable Prices</h3>
-                    <p>Doloribus facilis, tempora magni sequi eaque totam natus necessitatibus voluptatum quidem optio expedita nulla error?</p>
-                </div>
-                <div class="sales-point">
-                    <h3>Extendable Warranty</h3>
-                    <p>Nostrum minus nobis maxime omnis harum odio, repellat, corporis nesciunt vel cum praesentium quae animi.</p>
-                </div>
+        <div class="sales-points">
+            <div class="sales-point">
+                <h3>Reliability</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic facere ipsam repudiandae est voluptates
+                    magnam?</p>
             </div>
+            <div class="sales-point">
+                <h3>Durability</h3>
+                <p>Iste aspernatur quod illum repellat quisquam, facere quia perspiciatis in ipsum nam ut? Vero, fugiat!
+                </p>
+            </div>
+            <div class="sales-point">
+                <h3>Unparalleled Customer Service</h3>
+                <p>Praesentium voluptatibus ipsum pariatur ipsam aperiam explicabo repellat doloribus ducimus quo,
+                    distinctio ea voluptate placeat.</p>
+            </div>
+            <div class="sales-point">
+                <h3>Unbeatable Prices</h3>
+                <p>Doloribus facilis, tempora magni sequi eaque totam natus necessitatibus voluptatum quidem optio
+                    expedita nulla error?</p>
+            </div>
+            <div class="sales-point">
+                <h3>Extendable Warranty</h3>
+                <p>Nostrum minus nobis maxime omnis harum odio, repellat, corporis nesciunt vel cum praesentium quae
+                    animi.</p>
+            </div>
+        </div>
 
-            <div class="cta">
-                <div class="cta-contents">
-                    <p>Click here to join our mailing list</p>
-                    <a href="#" class="btn">Join</a>
-                </div>
+        <div class="cta">
+            <div class="cta-contents">
+                <p>Click here to join our mailing list</p>
+                <a href="#" class="btn">Join</a>
             </div>
+        </div>
 
         <!-- Return to Top Button -->
-        <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img src="images/back-to-top-icon-png-7.jpg" alt=""></button></div>
+        <div><button onclick="topFunction()" id="cornerbtn" class="return-to-top" title="Go to top"><img
+                    src="images/back-to-top-icon-png-7.jpg" alt=""></button></div>
 
-        <!-- JavaScript - Return to Top -->
-        <script>
-            // When the user scrolls down 800px from the top of the document, show the button
-             window.onscroll = function() {scrollFunction()};
-         
-             function scrollFunction() {
-               if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-                 document.getElementById("cornerbtn").style.display = "block";
-               } else {
-                 document.getElementById("cornerbtn").style.display = "none";
-               }
-             }
-         
-             // When the user clicks on the button, scroll to the top of the document
-             function topFunction() {
-               document.body.scrollTop = 0;
-               document.documentElement.scrollTop = 0;
-             }
-         </script>
-
-        <!-- Javascript - Get Current Year for the Footer -->
-        <script>
-            window.onload = function() {
-                var d = new Date();
-                document.getElementById("copyright").innerHTML = d.getFullYear();
-            }
-        </script>         
 
         <footer>
             <p>&copy; <span id="copyright"></span> Michael Roberts Productions</p>
@@ -98,4 +88,6 @@
 
     </main>
 </body>
+
 </html>
+<script src="js/scripts.js"></script>

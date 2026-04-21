@@ -78,6 +78,46 @@ form h5 {
 .products {
     flex: 2 1 75vw;
 }
+.product {
+    background-color: #303235;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 2em;
+    padding: .5rem;
+    border: 3px double #aaa;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 22% 78%;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+    grid-template-areas: 
+    'thumbnail product-title' 
+    'thumbnail product-description'
+    'thumbnail prouduct-price';
+    transform: all ease-in-out 200ms;
+}
+
+.thumbnail {
+    grid-area: thumbnail;
+    justify-self: center;
+    border: 3px double #aaa;
+    border-radius: 10px;
+    max-width: 150px;
+}
+.product-title {
+    grid-area: product-title;
+}
+.product-description {
+    grid-area: product-description;
+}
+.product-price {
+    grid-area: prouduct-price;
+}
+.product:hover {
+    border: 3px double #fff;
+    box-shadow: 3px 3px 12px 3px gray;
+}
 
 /* .product CSS */
 
@@ -91,6 +131,23 @@ form h5 {
     }
 
     /* .product mobile CSS */
+   
+    .products, .product {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .product {
+        grid-template-areas: 
+        'thumbnail'
+        'product-title'
+        'product-description'
+        'prouduct-price';
+        margin: .5rem 0;
+        border: none;
+        border-radius: 0;
+    }
+
 
     aside {
         position: relative;
